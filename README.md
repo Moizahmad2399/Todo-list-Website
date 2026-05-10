@@ -1,59 +1,191 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📝 To-Do List Management App
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<div align="center">
 
-## About Laravel
+Homepage
+<img width="1886" height="912" alt="Landing page" src="https://github.com/user-attachments/assets/f44c855a-4a9f-45b4-8ea3-795725bf080a" />
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Edit Page
+<img width="1868" height="912" alt="Edit page" src="https://github.com/user-attachments/assets/2af69bf5-1818-41f8-b705-c6d2bcaca995" />
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Completed
+<img width="907" height="897" alt="Completed" src="https://github.com/user-attachments/assets/cec4c0b0-a6c1-4710-b3a8-909c9eaa9052" />
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+**A clean, modern To-Do List web application built with Laravel.**  
+Stay organized. Get things done. 🚀
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+</div>
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## ✨ Features
 
-### Premium Partners
+| Feature | Description |
+|---|---|
+| ➕ **Add Tasks** | Create tasks with title, description, due date and priority |
+| ✏️ **Edit Tasks** | Update any task details anytime |
+| 🗑️ **Delete Tasks** | Remove tasks with a confirmation prompt |
+| ✅ **Toggle Status** | Switch tasks between Pending and Completed instantly |
+| 🔍 **Filter Tasks** | Filter by All, Pending, or Completed status |
+| 📊 **Live Stats** | See count of pending and completed tasks at a glance |
+| 🎨 **Beautiful UI** | Modern gradient design with smooth hover effects |
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🖥️ Screenshots
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+> Home Page — Add tasks on the left, view all tasks on the right with filter tabs and live stats.
 
-## Code of Conduct
+> Edit Page — Clean form to update task title, description, due date, priority and status.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🛠️ Tech Stack
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- **Backend** — Laravel 11, PHP 8.1+
+- **Database** — MySQL
+- **Frontend** — Bootstrap 5, Font Awesome 6, Google Fonts (Poppins)
+- **Tools** — Composer, XAMPP, phpMyAdmin
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## ⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/todo-app.git
+cd todo-app
+```
+
+### 2. Install Dependencies
+
+```bash
+composer install
+```
+
+### 3. Create Environment File
+
+```bash
+cp .env.example .env
+```
+
+### 4. Configure Database
+
+Open `.env` and update these lines:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=todo_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 5. Generate App Key
+
+```bash
+php artisan key:generate
+```
+
+### 6. Run Migrations
+
+```bash
+php artisan migrate
+```
+
+### 7. Start the Server
+
+```bash
+php artisan serve
+```
+
+### 8. Open in Browser
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 📁 Project Structure
+
+```
+todo-app/
+├── app/
+│   ├── Http/
+│   │   └── Controllers/
+│   │       └── TaskController.php   # Handles all task logic
+│   └── Models/
+│       └── Task.php                 # Task model
+├── database/
+│   └── migrations/
+│       └── xxxx_create_tasks_table.php
+├── resources/
+│   └── views/
+│       ├── layouts/
+│       │   └── app.blade.php        # Main layout file
+│       └── tasks/
+│           ├── index.blade.php      # Home page
+│           └── edit.blade.php       # Edit task page
+└── routes/
+    └── web.php                      # All routes
+```
+
+---
+
+## 🗄️ Database Schema
+
+**Table: `tasks`**
+
+| Column | Type | Description |
+|---|---|---|
+| `id` | BIGINT | Primary key, auto increment |
+| `title` | VARCHAR | Task title |
+| `description` | TEXT | Task description (nullable) |
+| `due_date` | DATE | Task due date (nullable) |
+| `priority` | ENUM | High / Medium / Low |
+| `status` | ENUM | Pending / Completed |
+| `created_at` | TIMESTAMP | Auto generated |
+| `updated_at` | TIMESTAMP | Auto generated |
+
+---
+
+## 🔗 Routes
+
+| Method | URL | Action |
+|---|---|---|
+| GET | `/` | Show all tasks |
+| POST | `/tasks` | Store new task |
+| GET | `/tasks/{id}/edit` | Show edit form |
+| PUT | `/tasks/{id}` | Update task |
+| DELETE | `/tasks/{id}` | Delete task |
+| PATCH | `/tasks/{id}/toggle` | Toggle task status |
+
+---
+
+## 👨‍💻 Author
+
+**Your Name**  
+📧 your-email@example.com  
+🌐 [github.com/your-username](https://github.com/your-username)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+Made with ❤️ using Laravel  
+⭐ Star this repo if you found it helpful!
+
+</div>
